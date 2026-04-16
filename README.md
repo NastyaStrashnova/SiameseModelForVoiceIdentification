@@ -23,20 +23,20 @@ Transformation of time-series audio into image-like representations suitable for
 ## 3. Dataset Construction
 - Triplet-style data organization:
   - Anchor (reference sample)
-Positive (same speaker)
-Negative (different speaker)
-Built using tf.data with:
-caching
-shuffling
-batching
-prefetching
+  - Positive (same speaker)
+  - Negative (different speaker)
+- Built using tf.data with:
+ - caching
+  - shuffling
+  - batching
+  - prefetching
 ## 4. Model Architecture
-Embedding Network
-Convolutional Neural Network (CNN)
-Multiple convolution + pooling blocks
-Final dense layer producing a 4096-dimensional embedding
-Siamese Network
-Shared embedding network for both inputs
+- Embedding Network
+- Convolutional Neural Network (CNN)
+- Multiple convolution + pooling blocks
+- Final dense layer producing a 4096-dimensional embedding
+- Siamese Network
+ - Shared embedding network for both inputs
 L1 distance layer to measure similarity
 Binary classifier to predict match / non-match
 ## 5. Training
