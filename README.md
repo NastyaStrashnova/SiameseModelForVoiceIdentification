@@ -26,7 +26,7 @@ Transformation of time-series audio into image-like representations suitable for
   - Positive (same speaker)
   - Negative (different speaker)
 - Built using tf.data with:
- - caching
+  - caching
   - shuffling
   - batching
   - prefetching
