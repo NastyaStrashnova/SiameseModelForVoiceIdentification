@@ -14,15 +14,15 @@ Voice authentication requires learning speaker-specific features that remain rob
 The system follows a multi-stage pipeline:
 
 ## 1. Audio Preprocessing
-Conversion from .flac to .wav
-Silence trimming using librosa
-Fixed-length signal extraction for consistency
+- Conversion from .flac to .wav
+- Silence trimming using librosa
+- Fixed-length signal extraction for consistency
 ## 2. Feature Extraction
 Spectrogram generation from audio signals
 Transformation of time-series audio into image-like representations suitable for CNNs
 ## 3. Dataset Construction
-Triplet-style data organization:
-Anchor (reference sample)
+- Triplet-style data organization:
+  - Anchor (reference sample)
 Positive (same speaker)
 Negative (different speaker)
 Built using tf.data with:
