@@ -79,6 +79,7 @@ This project is implemented as a single Jupyter notebook, which includes:
 - Evaluation and metrics
 
 👉 The full implementation is available here:
+https://github.com/NastyaStrashnova/SiameseModelForVoiceIdentification/tree/main
 
 
 ## Key Takeaways
